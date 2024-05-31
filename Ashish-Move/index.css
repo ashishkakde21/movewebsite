@@ -1,0 +1,357 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    max-width: 960px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -2px -2px 2px 4px #ccc;
+}
+
+.wrapper {
+    max-width: 960px;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -2px -2px 2px 4px #ccc;
+}
+
+#navbar {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0;
+    height: 20%;
+    background: url("images/header3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    font-family: Inter;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.045em;
+    text-align: justified;
+     color: #FFFFFF;
+
+}
+
+.watchlist {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em; 
+    text-align: right;
+    background-color: #c2e968;
+    grid-template-rows: auto;
+    color: #0d0e0d;
+  
+}
+
+.watchlist:hover {
+    background: orange;
+    color: #000;
+} 
+
+#searchbar {
+display: flex;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 90%;
+height: 38px;
+left: 30px;
+top: 80px;
+background: #FFFFFF;
+border: 1px solid #D1D5DB;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+}
+
+#search {
+width: 342px;
+height: 30px;
+padding: 3px 13px;
+border: none;
+flex: none;
+order: 0;
+flex: 1 1;
+}
+
+#search-btn {
+padding: 9px 0 7px 0;
+width: 100px;
+height: 38px;
+background: #F9FAFB;
+border: 1px solid #D1D5DB;
+border-radius: 0px 6px 6px 0px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1 1 0;
+cursor: pointer;
+}
+
+#search-btn:hover {
+    background: #ccc;
+}
+
+#movielist {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 5px 0;
+    background: url("images/no-data-initial.svg");
+    background-size: auto 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 50px 0;
+    padding: 5px 0;
+    background: url("images/no-data-initial.svg");
+    background-size: auto 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    gap: 30px;
+}
+
+#title {
+    margin: 0 50px 0 0;
+    justify-self: start;
+    font-family: Inter;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: justified;
+    font-weight: 700;
+    padding: 0;
+}
+
+.poster {
+    height: auto;
+    width: 25%;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#rating-etc {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      list-style: none;
+    } 
+
+    .detail {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        list-style: none;
+    }
+    
+  .rating-info {
+        margin-right: 20px;
+        font-size: 0.8rem;
+         font-weight: 500;
+    }
+    
+ .add {
+    margin: 0;
+   align-self: center;
+    
+}
+    
+    
+.img {
+    width: 200px;
+    height: 90%;
+    margin: 10px 5px;
+}
+
+#title-div {
+    display: flex;
+    width: 90%;
+    justify-content: start;
+    align-items: baseline;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.rating {
+    margin: 15px 0 0 10px;
+    font-size: 1rem;
+    margin: 10px 0 10px 5px;
+}
+
+.checked {
+  color: orange;
+  margin: 10px 0 10px 15px;
+  padding: 10px 0;
+}
+
+#no-movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    align-self: center;
+    width: 0;
+    height: 0;
+}
+
+.no-movies-title {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #DFDDDD;
+}
+
+.add-movies {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+#watch-btn {
+    border: 0;
+    background: none;
+    margin: 5px 0;
+    padding: 0;
+    cursor: pointer;
+   }
+
+#movie-info {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 10px;
+ }
+
+#description {
+    margin-top: 20px;
+    width: auto;
+    padding: 0 10px 5px 0;
+}
+
+.movie-description {
+    padding: 5px 0;
+    margin: 5px 0px; 
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    #searchbar {
+        width: 100%;
+        left: 0px;
+        top: 70px;
+    }    
+
+    #movie-info  {
+       width: 100%;
+    }
+     #title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 0;
+     }
+
+     #movie-info {
+    
+      padding: 0 10px;
+     }
+
+     #description {
+      padding: 0 0 0 1px;
+    }
+
+    .poster {
+        height: 25%;
+        width: 100%;
+        
+    }
+
+    .img {
+        width: auto;
+        height: 80%;
+        margin: 15px;
+    }
+
+    .movie-description {
+        font-size: 0.9rem;
+    }
+
+  }
